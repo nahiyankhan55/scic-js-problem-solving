@@ -44,3 +44,25 @@ function findMax(arr) {
   return max;
 }
 console.log(findMax([5, 1, 9, 3]));
+
+// Problem 5: Remove Duplicates from an Array
+function removeDuplicates(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!result.includes(arr[i])) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
+
+// Problem 6: Sum of All Numbers in an Array
+function sumArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum;
+}
+console.log(sumArray([1, 2, 3, 4]));
